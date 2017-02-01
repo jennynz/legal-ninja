@@ -1,0 +1,11 @@
+email: jennyesahng@gmail.com
+fullname: 'Jenny Sahng'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$kuz.TE2LyM79RKEmXBpAyOiKVei22P3fxTgGUT/RD78g7yz4W4UJK

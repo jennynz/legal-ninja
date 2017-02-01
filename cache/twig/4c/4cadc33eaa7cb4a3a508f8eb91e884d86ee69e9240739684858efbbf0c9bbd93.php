@@ -82,6 +82,6 @@ class __TwigTemplate_b03a7590f7414a6ca6490fad1fb7622ba05fc128ac96dd816506bd55e0b
         return new Twig_Source("{% for meta in page.metadata %}
 <meta {% if meta.name %}name=\"{{ meta.name }}\" {% endif %}{% if meta.http_equiv %}http-equiv=\"{{ meta.http_equiv }}\" {% endif %}{% if meta.charset %}charset=\"{{ meta.charset }}\" {% endif %}{% if meta.property %}property=\"{{ meta.property }}\" {% endif %}{% if meta.content %}content=\"{{ meta.content }}\" {% endif %}/>
 {% endfor %}
-", "partials/metadata.html.twig", "/home/jenny/Documents/Legal Ninja/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/metadata.html.twig");
+", "partials/metadata.html.twig", "/home/jenny/Documents/Legal Ninja/user/themes/learn2/templates/partials/metadata.html.twig");
     }
 }

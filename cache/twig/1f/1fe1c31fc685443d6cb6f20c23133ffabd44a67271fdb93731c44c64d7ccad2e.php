@@ -50,6 +50,6 @@ class __TwigTemplate_75fa9b7da51e885668efa87813c2ec07e15c3360c08f4a707dcd1edc655
     public function getSourceContext()
     {
         return new Twig_Source("<a class=\"github-link\" href=\"{{ theme_config.github.tree ~  ('/'~page.filePathClean)|replace({'/user/':''}) }}\"><i class=\"fa fa-github-square\"></i> {{ 'THEME_LEARN2_GITHUB_EDIT_THIS_PAGE'|t }}</a>
-", "partials/github_link.html.twig", "/home/jenny/Documents/Legal Ninja/grav-skeleton-rtfm-site/user/themes/learn2/templates/partials/github_link.html.twig");
+", "partials/github_link.html.twig", "/home/jenny/Documents/Legal Ninja/user/themes/learn2/templates/partials/github_link.html.twig");
     }
 }

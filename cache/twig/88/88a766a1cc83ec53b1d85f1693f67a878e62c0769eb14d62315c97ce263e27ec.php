@@ -122,6 +122,6 @@ class __TwigTemplate_01ed1e41f7617fc487713a8088838731877b0a1a5300dad121dbd8763a9
 {% block content %}
     {% include 'partials/page.html.twig' %}
 {% endblock %}
-", "docs.html.twig", "/home/jenny/Documents/Legal Ninja/grav-skeleton-rtfm-site/user/themes/learn2/templates/docs.html.twig");
+", "docs.html.twig", "/home/jenny/Documents/Legal Ninja/user/themes/learn2/templates/docs.html.twig");
     }
 }

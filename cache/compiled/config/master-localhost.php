@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1485657196,
-    'checksum' => '229697b150e195409bde44924ee2ba8d',
+    'timestamp' => 1485661946,
+    'checksum' => '302c7a303e35988e232ec894efcba837',
     'files' => [
         'user/localhost/config' => [
             'security' => [
@@ -15,6 +15,10 @@ return [
             ]
         ],
         'user/config' => [
+            'media' => [
+                'file' => 'user/config/media.yaml',
+                'modified' => 1485661741
+            ],
             'plugins/anchors' => [
                 'file' => 'user/config/plugins/anchors.yaml',
                 'modified' => 1484695008
@@ -29,11 +33,15 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1484695008
+                'modified' => 1485661946
+            ],
+            'streams' => [
+                'file' => 'user/config/streams.yaml',
+                'modified' => 1485661741
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1485656993
+                'modified' => 1485661724
             ]
         ],
         'system/config' => [
@@ -63,6 +71,10 @@ return [
                 'file' => 'user/plugins/error/error.yaml',
                 'modified' => 1484695012
             ],
+            'plugins/login' => [
+                'file' => 'user/plugins/login/login.yaml',
+                'modified' => 1485661714
+            ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1484695014
@@ -71,9 +83,21 @@ return [
                 'file' => 'user/plugins/anchors/anchors.yaml',
                 'modified' => 1484695010
             ],
+            'plugins/form' => [
+                'file' => 'user/plugins/form/form.yaml',
+                'modified' => 1485661702
+            ],
             'plugins/highlight' => [
                 'file' => 'user/plugins/highlight/highlight.yaml',
                 'modified' => 1484695014
+            ],
+            'plugins/admin' => [
+                'file' => 'user/plugins/admin/admin.yaml',
+                'modified' => 1485661724
+            ],
+            'plugins/email' => [
+                'file' => 'user/plugins/email/email.yaml',
+                'modified' => 1485661709
             ],
             'plugins/breadcrumbs' => [
                 'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
@@ -106,6 +130,46 @@ return [
                     404 => '/error'
                 ]
             ],
+            'login' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'route' => NULL,
+                'route_register' => false,
+                'route_activate' => '/activate_user',
+                'route_forgot' => '/forgot_password',
+                'route_reset' => '/reset_password',
+                'redirect_after_login' => NULL,
+                'parent_acl' => false,
+                'protect_protected_page_media' => false,
+                'user_registration' => [
+                    'enabled' => true,
+                    'fields' => [
+                        0 => 'username',
+                        1 => 'password',
+                        2 => 'email',
+                        3 => 'fullname',
+                        4 => 'title'
+                    ],
+                    'access' => [
+                        'site' => [
+                            'login' => 'true'
+                        ]
+                    ],
+                    'options' => [
+                        'validate_password1_and_password2' => true,
+                        'set_user_disabled' => false,
+                        'login_after_registration' => true,
+                        'send_activation_email' => false,
+                        'send_notification_email' => false,
+                        'send_welcome_email' => false
+                    ]
+                ],
+                'rememberme' => [
+                    'enabled' => true,
+                    'timeout' => 604800,
+                    'name' => 'grav-rememberme'
+                ]
+            ],
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
@@ -119,9 +183,97 @@ return [
                 'icon' => NULL,
                 'class' => NULL
             ],
+            'form' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'files' => [
+                    'multiple' => false,
+                    'limit' => 10,
+                    'filesize' => 5,
+                    'destination' => 'self@',
+                    'avoid_overwriting' => false,
+                    'random_name' => false,
+                    'accept' => [
+                        0 => 'image/*'
+                    ]
+                ]
+            ],
             'highlight' => [
                 'enabled' => true,
                 'theme' => 'learn'
+            ],
+            'admin' => [
+                'enabled' => true,
+                'route' => '/admin',
+                'cache_enabled' => false,
+                'theme' => 'grav',
+                'logo_text' => '',
+                'body_classes' => '',
+                'sidebar' => [
+                    'activate' => 'tab',
+                    'hover_delay' => 100,
+                    'size' => 'auto'
+                ],
+                'dashboard' => [
+                    'days_of_stats' => 7
+                ],
+                'widgets' => [
+                    'dashboard-maintenance' => true,
+                    'dashboard-statistics' => true,
+                    'dashboard-notifications' => true,
+                    'dashboard-feed' => true,
+                    'dashboard-pages' => true
+                ],
+                'session' => [
+                    'timeout' => 1800
+                ],
+                'warnings' => [
+                    'delete_page' => true
+                ],
+                'edit_mode' => 'normal',
+                'show_github_msg' => true,
+                'google_fonts' => true,
+                'enable_auto_updates_check' => true,
+                'notifications' => [
+                    'feed' => true,
+                    'dashboard' => true,
+                    'plugins' => true,
+                    'themes' => true
+                ],
+                'popularity' => [
+                    'enabled' => true,
+                    'ignore' => [
+                        0 => '/test*',
+                        1 => '/modular'
+                    ],
+                    'history' => [
+                        'daily' => 30,
+                        'monthly' => 12,
+                        'visitors' => 20
+                    ]
+                ]
+            ],
+            'email' => [
+                'enabled' => true,
+                'from' => NULL,
+                'from_name' => NULL,
+                'to' => NULL,
+                'to_name' => NULL,
+                'mailer' => [
+                    'engine' => 'mail',
+                    'smtp' => [
+                        'server' => 'localhost',
+                        'port' => 25,
+                        'encryption' => 'none',
+                        'user' => '',
+                        'password' => ''
+                    ],
+                    'sendmail' => [
+                        'bin' => '/usr/sbin/sendmail'
+                    ]
+                ],
+                'content_type' => 'text/html',
+                'debug' => false
             ],
             'breadcrumbs' => [
                 'enabled' => true,
@@ -392,18 +544,18 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'RTFM Documentation',
+            'title' => 'Legal Ninja',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'John Appleseed',
-                'email' => 'john@email.com'
+                'name' => 'Jenny Sahng',
+                'email' => 'jennyesahng@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'RTFM Skeleton'
+                'description' => 'Legal info made easy for kiwis'
             ],
             'summary' => [
                 'enabled' => true,

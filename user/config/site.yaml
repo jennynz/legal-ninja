@@ -1,8 +1,17 @@
-title: RTFM Documentation
+title: 'Legal Ninja'
+default_lang: en
+author:
+  name: 'Jenny Sahng'
+  email: jennyesahng@gmail.com
+taxonomies:
+  - category
+  - tag
 metadata:
-    description: 'RTFM Skeleton'
-
-taxonomies: [category,tag]
+  description: 'Legal info made easy for kiwis'
 summary:
+  enabled: true
+  format: short
   size: 300
-
+  delimiter: '==='
+blog:
+  route: /blog
