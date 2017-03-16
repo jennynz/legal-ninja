@@ -62,10 +62,9 @@ textarea, input[type="email"], input[type="number"], input[type="password"], inp
   #header a {
     display: inline-block; }
   #header #logo-svg {
-    width: 8rem;
-    height: 2rem; }
-    #header #logo-svg path {
-      fill: #DB1C26; }
+    width: 12rem;
+    height: 12rem;
+    fill: #DB1C26; }
 
 .searchbox {
   margin-top: 0.5rem;
