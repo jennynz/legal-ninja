@@ -1,11 +1,10 @@
 ---
-title: Basics
+title: Home
 taxonomy:
-    category: docs
+    category:
+        - docs
 ---
 
-### Chapter 1
+# Legal Ninja is a wesite providing easy-to-understand legal information for kiwis.
 
-# Basics
-
-Discover the **basic** principals
+Get started by choosing a topic on the left.

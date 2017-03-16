@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a
+class ComposerStaticInitac5221f48c3eae25d882669d8a3c8f6c
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -307,6 +307,7 @@ class ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a
         'Grav\\Common\\Errors\\BareHandler' => __DIR__ . '/../..' . '/system/src/Grav/Common/Errors/BareHandler.php',
         'Grav\\Common\\Errors\\Errors' => __DIR__ . '/../..' . '/system/src/Grav/Common/Errors/Errors.php',
         'Grav\\Common\\Errors\\SimplePageHandler' => __DIR__ . '/../..' . '/system/src/Grav/Common/Errors/SimplePageHandler.php',
+        'Grav\\Common\\Errors\\SystemFacade' => __DIR__ . '/../..' . '/system/src/Grav/Common/Errors/SystemFacade.php',
         'Grav\\Common\\File\\CompiledFile' => __DIR__ . '/../..' . '/system/src/Grav/Common/File/CompiledFile.php',
         'Grav\\Common\\File\\CompiledJsonFile' => __DIR__ . '/../..' . '/system/src/Grav/Common/File/CompiledJsonFile.php',
         'Grav\\Common\\File\\CompiledMarkdownFile' => __DIR__ . '/../..' . '/system/src/Grav/Common/File/CompiledMarkdownFile.php',
@@ -528,6 +529,8 @@ class ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a
         'MatthiasMullie\\Minify\\JS' => __DIR__ . '/..' . '/matthiasmullie/minify/src/JS.php',
         'MatthiasMullie\\Minify\\Minify' => __DIR__ . '/..' . '/matthiasmullie/minify/src/Minify.php',
         'MatthiasMullie\\PathConverter\\Converter' => __DIR__ . '/..' . '/matthiasmullie/path-converter/src/Converter.php',
+        'MatthiasMullie\\PathConverter\\ConverterInterface' => __DIR__ . '/..' . '/matthiasmullie/path-converter/src/ConverterInterface.php',
+        'MatthiasMullie\\PathConverter\\NoConverter' => __DIR__ . '/..' . '/matthiasmullie/path-converter/src/NoConverter.php',
         'Monolog\\ErrorHandler' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/ErrorHandler.php',
         'Monolog\\Formatter\\ChromePHPFormatter' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Formatter/ChromePHPFormatter.php',
         'Monolog\\Formatter\\ElasticaFormatter' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Formatter/ElasticaFormatter.php',
@@ -1041,11 +1044,11 @@ class ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit6e9003c8d128a7d440a6e6542b5b854a::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitac5221f48c3eae25d882669d8a3c8f6c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitac5221f48c3eae25d882669d8a3c8f6c::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInitac5221f48c3eae25d882669d8a3c8f6c::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitac5221f48c3eae25d882669d8a3c8f6c::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitac5221f48c3eae25d882669d8a3c8f6c::$classMap;
 
         }, null, ClassLoader::class);
     }
